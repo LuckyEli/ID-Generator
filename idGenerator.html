@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate and User ID Generator</title>
+    <link rel="stylesheet" href="idGenerator.css">
+</head>
+<body id="body">
+    <section>
+        <h1>SELECT STUDENT TYPE</h1>
+        <div>
+            <select id="sele" name="student_type">
+                <option value="new student">NEW STUDENT</option>
+                <option value="old student">OLD STUDENT</option>
+            </select>
+        </div>
+        <div>
+            <button id="btt">Enter</button>
+        </div>
+    </section>
+
+
+    <section id="sec2">
+        <h2>NEW STUDENT</h2>
+        <p>First Name:
+            <input id="firstName" type="text">
+        </p>
+        <p>Last Name:
+            <input id="lastName" type="text">
+        </p>
+        <p>Date of Registration:
+            <input id="date" type="date" max="today" min="today">
+        </p>
+        <p>Course:
+            <select id="sel" name="courses">
+                <option value="Desktop Publishing">Desktop Publishing</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Web development">Web development</option>
+                <option value="Computer Hardware Repairs and Maintenance">Computer Hardware Repairs and Maintenance</option>
+                <option value="Kids Code">Kids Code</option>
+                <option value="Graphics Design">Graphics Design</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+            </select>
+        </p>
+        <button id="submit">Submit</button>
+        <p id="userID"></p>
+        <p id="certificateID"></p>
+    </section>
+    <section id="sec3">
+        <h2>OLD STUDENT</h2>
+        <form action="submit" method="post">
+            <p>User ID:
+                <span style="margin-left: 3.33em; margin-right: 0.9em;">SPINE</span>
+                <input id="lett" style="width: 1.5em; border: 1px solid black;" type="text" maxlength="2">
+                <input id="numb" style="width: 4em; border: 1px solid black; margin-left: 0.5em;" type="number" min="1" max="3">
+            </p>
+            <p>Course:
+                <select id="sel" name="courses">
+                    <option value="Desktop Publishing">Desktop Publishing</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Web development">Web development</option>
+                    <option value="Computer Hardware Repairs and Maintenance">Computer Hardware Repairs and Maintenance</option>
+                    <option value="Kids Code">Kids Code</option>
+                    <option value="Graphics Design">Graphics Design</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                </select>
+            </p>
+        </form>
+        <button id="submit2">Submit</button>
+    </section>
+    <p id="ava">Available</p>
+    <p id="reg">Register</p>
+    <script src="idGenerator.js"></script>
+</body>
+</html>

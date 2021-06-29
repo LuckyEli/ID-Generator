@@ -1,0 +1,75 @@
+body {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+#sele {
+    border: 1px solid black;
+}
+section:first-of-type {
+    width: 100%;
+    border: 1px solid black;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    margin: 0;
+    padding-bottom: 0.7em;
+}
+section:first-of-type>h1 {
+    text-align: center;
+}
+section:first-of-type>div:first-of-type {
+    text-align: center;
+}
+section:first-of-type>div:nth-of-type(2) {
+    display: grid;
+    justify-content: center;
+}
+section:first-of-type>div:nth-of-type(2)>button {
+    border: 1px solid black;
+    width: 5em;
+    margin-top: 5px;
+}
+section:nth-of-type(2) {
+    display: none;
+    padding: 2em 1em 1em 1em;
+}
+section:nth-of-type(2)>h2 {
+    text-align: center;
+}
+#firstName {
+    border: 1px solid black;
+    margin-left: 1.25em;
+}
+#lastName {
+    border: 1px solid black;
+    margin-left: 1.38em;
+}
+#date {
+    border: 1px solid black;
+    width: 47.7%;
+}
+#sel {
+    border: 1px solid black;
+    margin-left: 1.36em;
+    width: 73.4%;
+}
+#sec3 {
+    display: none;
+    padding: 2em 1em 1em 1em;
+}
+#shw {
+    border: 1px hidden black;
+    background-color: green;
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#ava {
+    display: none;
+}
+#reg {
+    display: none;
+}
